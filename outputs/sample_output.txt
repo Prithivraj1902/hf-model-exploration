@@ -1,0 +1,19 @@
+Hugging Face Model Exploration - Sample Output
+
+=== 1. Summarization (facebook/bart-large-cnn) ===
+Summary: [generated summary from the model]
+
+=== 2. Zero-shot Classification (facebook/bart-large-mnli) ===
+Top label: prescription | score: [model score]
+
+=== 3. Question Answering (deepset/roberta-base-squad2) ===
+Question: What medication was prescribed?
+Answer: [model answer] | confidence: [model score]
+
+Question: What is the diagnosis?
+Answer: [model answer] | confidence: [model score]
+
+Question: What test was ordered?
+Answer: [model answer] | confidence: [model score]
+
+Note: Run model_exploration.py to generate the live values. The screenshot in the README should be captured from the user's own execution.
