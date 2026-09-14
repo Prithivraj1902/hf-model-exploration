@@ -36,26 +36,32 @@ python model_exploration.py
 
 The first run downloads the pretrained model weights.
 
-## Expected Output
+## Screenshots / Output
 
-The program prints:
+The `outputs/` folder contains a sample output file showing the expected console-output structure:
 
-- A concise summary of the clinical note.
-- The highest-scoring document category and scores for all candidate labels.
-- Answers to questions about the medication, diagnosis, and test ordered.
+- [`outputs/sample_output.txt`](./outputs/sample_output.txt)
 
-Example output format:
+For the final academic submission, capture a **live screenshot** of the terminal or Google Colab after running `model_exploration.py` and add it to the `outputs/` folder. The live screenshot should show the summarization result, classification result, and question-answering results produced by the actual model run.
+
+### Expected Output Format
 
 ```text
 === 1. Summarization (facebook/bart-large-cnn) ===
-Summary: ...
+Summary: [generated summary]
 
 === 2. Zero-shot Classification (facebook/bart-large-mnli) ===
-Top label: ... | score: ...
+Top label: [predicted label] | score: [model score]
 
 === 3. Question Answering (deepset/roberta-base-squad2) ===
 Question: What medication was prescribed?
-Answer: Amoxicillin 500mg | confidence: ...
+Answer: [model answer] | confidence: [model score]
+
+Question: What is the diagnosis?
+Answer: [model answer] | confidence: [model score]
+
+Question: What test was ordered?
+Answer: [model answer] | confidence: [model score]
 ```
 
 ## Results and Observations
